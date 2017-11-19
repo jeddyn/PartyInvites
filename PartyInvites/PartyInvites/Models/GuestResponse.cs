@@ -15,7 +15,7 @@ namespace PartyInvites.Models
         public string Email { get; set; }
         [Required(ErrorMessage ="Proszę podać numer telefonu.")]
         public string Phone { get; set; }
-        [Required(ErrorMessage = "Proszę określić, czy weźmiesz udział.")]
+        [Required(ErrorMessage = "Proszę określić, czy weźmiesz udział")]
         public bool? WillAttend { get; set; }
       
     }

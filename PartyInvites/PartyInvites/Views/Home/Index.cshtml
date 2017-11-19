@@ -3,15 +3,24 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
     <title>Przyjęcie sylwestrowe</title>
+    <style>
+        .btn a { color: white;
+            text-decoration: none }
+
+        body {  background-color: #F1F1F1; }
+    </style>
 </head>
 <body>
-    <div>
-        @ViewBag.Greeting, tekst(Z widoku)
-        <p>Zapraszam na przyjęcie!. </br>
-        (Do zrobienia: trzeba to ulepszyć, dodać zdjęcie itd)
-        </p>
+    <div class="text-center">
+        @ViewBag.Greeting, tekst (Z widoku)
+        <h2>Zapraszam na przyjęcie!. </br></h2>
+        <h3>Ty też zostałeś zaproszony</h3>
+        <div class="btn btn-success">
         @Html.ActionLink("Wyślij RSVP", "RsvpForm")
+      </div>
     </div>
 </body>
 </html>
